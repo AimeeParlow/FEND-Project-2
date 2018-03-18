@@ -1,0 +1,262 @@
+.menu-button{
+	display: none;
+}
+
+/* minimum including Nexus 5X */
+
+@media screen and (max-width: 500px){
+	.nav-list {
+		display: flex;
+		flex-direction: column;
+		background-color: #edf1f8;
+		width: 140px;
+		height: 160px;
+		border-top-left-radius: 5px;
+		border-bottom-right-radius: 5px;
+		padding: 15px 0 0 5px;
+		margin: 0;
+	}
+
+	.nav-link {
+		font-size: 16px;
+		width: 140px;
+		border-radius: 0;
+	}
+
+	.nav-link:hover {
+		color: #212121;
+		text-decoration: underline;
+	}
+
+	.menu-button {
+		display: inline-block;
+		font-size: 2em;
+		color: gray;
+	}
+
+	.menu-button:hover {
+		cursor: pointer;
+	}
+
+	.nav {
+		width: 130px;
+		position: absolute;
+		transform: translate(-300px, 0);
+		transition: transform 0.5s ease;
+		z-index: 10;
+	}
+
+	.nav-item {
+		padding: 0;
+		margin: 4px;
+		width: 100%;
+		text-align: left;
+		padding-top: 7px;
+		padding-bottom: 3px;
+	}
+
+	.nav.open {
+		transform: translate(0, 0);
+	}
+
+	body {
+		width: 100%;
+		margin: 0;
+	}
+
+	.container {
+		width: 88%;
+	}
+
+	h1 {
+		font-size: 1.4em;
+	}
+
+	h3 {
+		font-size: 16px;
+	}
+
+	.main-title {
+		margin-bottom: 0;
+		font-size: 1.4em;
+	}
+
+	.logo {
+		width: 95px;
+	}
+
+	.work-area-container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.work-area {
+		display: flex;
+		flex-direction: row;
+		border: 1px solid #616161;
+		margin: 2px 12px 10px 0;
+	}
+
+	.work-info {
+		order: 1;
+		width: 60%;
+	}
+
+	.work-title {
+		width: 100%;
+		padding-top: 0;
+		margin-top: 40px;
+		margin-bottom: 0;
+		font-size: 16px;
+	}
+
+	.work-link {
+		margin: 0;
+	}
+
+	.work-image-area {
+		order: 2;
+		width: 40%;
+		padding-top: 20px;
+	}
+
+	.label {
+		width: 5px;
+	}
+
+	.work-area {
+		width: 100%;
+	}
+
+	.text-area {
+		width: 100%;
+		padding: 20px;
+	}
+
+	.about-me-text{
+		font-size: 16px;
+	}
+
+	.message-field {
+		flex-direction: column;
+		margin-top: 0;
+		margin-left: 0;
+	}
+
+	fieldset, 
+	input[type=text], 
+	input[type=email], 
+	textarea {
+		width: 100%;
+		font-size: 16px;
+		margin-top: 4px;
+	}
+
+	.label {
+		width: 8px;
+	}
+
+	.col-8 {
+		width: 100%;
+	}
+
+	input[type=text], 
+	input[type=email] {
+		height: 30px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+
+	.go-top {
+		opacity: 0.6;
+	}
+}
+
+/* medium including iPad */
+
+@media screen and (min-width: 501px) and (max-width: 800px){
+	h1 {
+		font-size: 1.8em;
+	}
+
+	h2 {
+		font-size: 1.5em;
+	}
+
+	h3 {
+		font-size: 1em;
+	}
+
+	.go-top {
+		font-size: 16px;
+	}
+
+	.container {
+		width: 88%;
+	}
+
+	.logo {
+		width: 120px;
+	}
+
+	.work-area-container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.work-area {
+		width: 85%;
+		margin-left: 50px;
+	}
+
+	.work-title {
+		font-size: 24px;
+		margin-top: 15px;
+	}
+
+	.work-link-jump {
+		font-size: 20px;
+		margin-bottom: 30px;
+	}
+
+	.text-area {
+		width: 90%;
+	}
+
+	.about-me-text {
+		font-size: 18px;
+	}
+
+	.contact-area {
+		width: 90%;
+	}
+
+	.label {
+		width: 20%;
+	}
+
+	.message-field {
+		margin-left: 30px;
+		width: 100%;
+	}
+}
+
+ /* minor breakpoints */
+
+@media screen and (min-width: 501px) and (max-width: 600px){
+	.nav-item {
+		padding-right: 1px;
+		padding-left: 1px;
+		font-size: 14px;
+	}
+}
+
+@media screen and (min-width: 801px) and (max-width: 1000px){
+	.container {
+		width: 80%;
+	}
+
+	.contact-area {
+		width: 80%;
+	}
+}
